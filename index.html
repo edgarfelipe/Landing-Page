@@ -16,18 +16,22 @@
   <title>Landing Page</title>
 </head>
 
-<body class="main-bg">
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="close" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1><a href="#">LOGO</a></h1>
+      <h1 onclick="getElementById('close-menu') .checked =  false"><a href="#home">LOGO</a></h1>
 
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu') .checked =  false">
           <li><a href="#intro">Intro</a></li>
-          <li><a href="#top3">top 3</a></li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">work</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#grid-one">grid-one</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#grid-two">outros</a></li>
+          <li><a href="#one-two">princig</a></li>
+          <li><a href="#two-contact">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -35,7 +39,7 @@
 
   <div class="menu-spacing"></div>
 
-  <section id="intro" class="intro main-bg section">
+  <section id="home" class="intro main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
         <h2>JANUARY BRINGS US FIREFOX 85</h2>
@@ -50,7 +54,7 @@
     </div>
   </section>
 
-  <section id="top3" class="white-bg section">
+  <section id="intro" class="white-bg section">
     <div class="main-content top3-content">
       <h2>top 3 jobs</h2>
 
@@ -73,6 +77,201 @@
         in this generator, please share them below as well. Thanks!</p>
     </div>
   </section>
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">My Grid</h2>
+      <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <article>
+          <h3>teste 1</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae sapiente qui consectetur itaque
+            inventore soluta, officia veniam vero adipisci consequatur animi exercitationem aliquam, atque doloribus
+            cumque.
+            In, rerum et!</p>
+        </article>
+        <article>
+          <h3>teste 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus tempora sunt sapiente architecto
+            delectus quaerat esse nihil, ipsam voluptatum porro fuga placeat id enim accusantium eligendi, nulla sint
+            iure.
+          </p>
+        </article>
+        <article>
+          <h3>teste 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus tempora sunt sapiente architecto
+            delectus quaerat esse nihil, ipsam voluptatum porro fuga placeat id enim accusantium eligendi, nulla sint
+            iure.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Gallery</h2>
+      <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?s=2" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?q=3" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?e=1" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?a=2" alt="random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?i=3" alt="random image from unsplash">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">My Grid</h2>
+      <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <article>
+          <h3>teste 1</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae sapiente qui consectetur itaque
+            inventore soluta, officia veniam vero adipisci consequatur animi exercitationem aliquam, atque doloribus
+            cumque.
+            In, rerum et!</p>
+        </article>
+        <article>
+          <h3>teste 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus tempora sunt sapiente architecto
+            delectus quaerat esse nihil, ipsam voluptatum porro fuga placeat id enim accusantium eligendi, nulla sint
+            iure.
+          </p>
+        </article>
+        <article>
+          <h3>teste 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus tempora sunt sapiente architecto
+            delectus quaerat esse nihil, ipsam voluptatum porro fuga placeat id enim accusantium eligendi, nulla sint
+            iure.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="one-two" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>princig</h2>
+
+      <p>Well, the answer is actually no - rather than generating fancy fonts, this converter creates fancy symbols. The
+        explanation starts with unicode; an industry standard which creates the specification for thousands of different
+        symbols and characters. All the characters that you see on your electronic devices, and printed in books, are
+        likely specified by the unicode standard.
+      </p>
+      <p>Amongst the hundreds of thousands of symbols which are in the unicode text specifications are certain
+        characters
+        which resemble, or are variations of the alphabet and other keyword symbols. For example, if we can take the
+        phrase "thug life" and convert its characters into the fancy letters "𝖙𝖍𝖚𝖌 𝖑𝖎𝖋𝖊" which are a set of
+        unicode symbols. These different sets of fancy text letters are scattered all throughout the unicode
+        specification, and so to create a fancy text translator, it's just a matter of finding these sets of letters and
+        symbols, and linking them to their normal alphabetical equivalents.</p>
+      <div class="responsive-table">
+        <table>
+          <caption>pricing table</caption>
+
+          <thead>
+            <tr>
+              <th>Title 1</th>
+              <th>Title 2</th>
+              <th>Title 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Testando</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="two-contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>JANUARY BRINGS US FIREFOX 85</h2>
+        <p>So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy
+          text
+          in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the
+          font of your text? Is it some sort of hack? Are you copying and pasting an actual font?</p>
+      </div>
+      <div class="intro-img">
+        <img src="/assets/img/javascript-not-optimize.svg" alt="logo de html css e js.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
+
+          <div class="form-group">
+            <label for="first name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="You first name">
+          </div>
+
+          <div class="form-group">
+            <label for="last name"> Last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email"> E-mail</label>
+            <input type="email" name="email" id="email" placeholder="You e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message"> Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="You message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class=" footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="https://beacons.ai/felipefernandes">Feito com ❤️ por Felipe Fernandes</a>
+    </p>
+  </footer>
+
+  <a class="back-to-top" href="#home">➤</a>
 </body>
 
 </html>
